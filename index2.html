@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    img {
+      float: right;
+      width: 150px;
+      padding: 10px;
+    }
+
+    div {
+      padding: 10px;
+    }
+
+    .intro-section {
+      border: 2px solid red;
+    }
+
+    .services-wrapper {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service-section {
+      width: 300px;
+      height: auto;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .service-section h1 {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .service-section p {
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro-section">
+    <img src="manu.png" width="50" height="100" alt="scenery">
+    <p>
+      Manchester United Football Club, commonly referred to as Man United (often stylised as Man Utd) or Man U, is a professional football club based in Old Trafford, Greater Manchester, England...
+    </p>
+  </div>
+
+  <div class="services-wrapper">
+    <h2 style="text-align: center; margin-bottom: 20px;">Our Health Services</h2>
+    <div class="services-container">
+      <div class="service-section">
+        <h1>Prescription Medicine Delivery</h1>
+        <p>Delivery of doctor-prescribed medications directly to a customer’s home or chosen address, with options for automatic refills or recurring deliveries.</p>
+      </div>
+      <div class="service-section">
+        <h1>Over-the-Counter (OTC) Product Delivery</h1>
+        <p>Delivery of non-prescription health products like vitamins, pain relievers, cold remedies, and more.</p>
+      </div>
+      <div class="service-section">
+        <h1>Online Consultation & E-Prescription</h1>
+        <p>Access to licensed healthcare professionals for virtual consultations and digital prescriptions for home delivery.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
