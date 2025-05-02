@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            column-count: 3;
+            column-gap: 30px;
+            text-align: justify;
+            column-rule: 1px solid;
+        }
+
+        .flex-container {
+            border: 2px solid red;
+            display: flex;
+        }
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            
+        }
+        
+        .box-one {
+            flex-grow: 1;
+            background-color: aquamarine;
+        }
+
+        .box-two {
+            flex-grow: 2;
+            background-color:bisque;
+        }
+
+        .box-three {
+            /* flex-grow: 3; */
+            flex-shrink: 3;
+            background-color:beige;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis a neque provident suscipit dignissimos facere amet voluptatibus iste ut repudiandae magnam tenetur at autem dicta ad consectetur, et quisquam quia consequatur exercitationem ex eum adipisci pariatur? Dignissimos, repudiandae consequuntur dolore unde quidem consequatur facilis maxime magni harum delectus assumenda eius aperiam consectetur itaque et, minima enim sint voluptate culpa aut. Numquam accusamus consequatur qui blanditiis doloribus facilis voluptatibus expedita, sint aliquam quaerat aliquid similique itaque a dolore sit quam debitis. Consequatur explicabo vitae aliquam. Cumque minima, harum deleniti deserunt id doloribus vero asperiores doloremque cupiditate voluptatum et nemo illum!</p> -->
+
+
+    <div class="flex-container">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+</body>
+</html>
