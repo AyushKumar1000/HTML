@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Question Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      text-align: center;
+      background: #f0f4f8;
+    }
+    #question-box {
+      background: white;
+      padding: 30px;
+      margin: 30px auto;
+      width: 60%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Random Question Generator</h1>
+
+  <div id="question-box">
+    <p id="question">Click the button to get a question!</p>
+  </div>
+
+  <button onclick="generateQuestion()">New Question</button>
+
+  <script>
+    const questions = [
+      "What is your favorite book and why?",
+      "If you could travel anywhere in the world, where would you go?",
+      "What motivates you every day?",
+      "What's a skill you wish you had?",
+      "What's your favorite way to spend a weekend?",
+      "If you had a time machine, what year would you visit?",
+      "What's something people often misunderstand about you?",
+      "What's one thing on your bucket list?",
+      "What advice would you give to your younger self?",
+      "If you could have dinner with any historical figure, who would it be?"
+    ];
+
+    function generateQuestion() {
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      document.getElementById("question").textContent = questions[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
